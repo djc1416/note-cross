@@ -37,7 +37,7 @@ Note&Cross is a command-line interface (CLI) task manager written in Python. The
 Prerequisites: Python 3 installed on the host system.
 
 1. Clone the repository:
-   git clone https://github.com
+   git clone https://github.com/djc1416/note-cross
 
 2. Navigate to the project directory:
    cd Note-Cross
