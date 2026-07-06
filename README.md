@@ -40,7 +40,7 @@ Prerequisites: Python 3 installed on the host system.
    git clone https://github.com/djc1416/note-cross
 
 2. Navigate to the project directory:
-   cd Note-Cross
+   cd note-cross
 
 3. Execute the script:
    python main.py
