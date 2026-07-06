@@ -72,7 +72,7 @@ def main():
             else:
                 print("Hey, you can't add a task that's empty.")
                 
-        # Option 2: Mark a task as completed (remove from the list)
+         # Option 2: Mark a task as completed (remove from the list)
         elif option == "2":
             if not task_list:
                 print("\nYou have nothing to cross off yet.")
@@ -87,11 +87,14 @@ def main():
                             save_to_archive(task_list)
                             print(f"\nSuccessfully crossed out: '{erased}'")
                         else:
-                            print("That number is not on the list, please try again.")
+                            # Raise error if the number is not on the list
+                            raise IndexError
                 except ValueError:
                     # Handle error if the user enters letters instead of a number
                     print("Please enter a valid number, not letters.")
-        
+                except IndexError:
+                    # New block to handle numbers out of range
+                    print("That number is not on the list, please try again.") 
         # Option 3: Delete all tasks at once
         elif option == "3":
             if not task_list:
